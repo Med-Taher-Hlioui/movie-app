@@ -12,7 +12,7 @@ export default function Home() {
     const data = await res.json();
     setMovies(data.Search || []);
   };
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     searchMovies(search);
   }, []);
