@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
 
-const API_URL = `https://www.omdbapi.com/?apikey=b0954c9c`; // Replace with your own API key if needed
+const API_URL = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API_KEY}`;
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
